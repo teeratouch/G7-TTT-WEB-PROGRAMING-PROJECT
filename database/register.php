@@ -13,7 +13,7 @@
     $course = clean($_POST['course']);
     $yrlevel = clean($_POST['yrlevel']);
     $phone = clean($_POST['phone']);
-    $lineid = clean($_POST['lineid']);
+    
     
      $query = "SELECT username FROM students WHERE username ='$uname'";
      $result = mysqli_query($con,$query);
@@ -25,8 +25,8 @@
        
        if(mysqli_num_rows($result) == 0) 
        {
-         $query = "INSERT INTO students(username, password, studentno, firstname, lastname, course, yrlevel, date_joined, phone, lineid)
-          VALUES ('$uname','$pword', '$studno', '$fname', '$lname', '$course', '$yrlevel','$phone','$lineid', NOW())" ;
+         $query = "INSERT INTO students(username, password, studentno, firstname, lastname, course, yrlevel, phone, date_joined)
+          VALUES ('$uname','$pword', '$studno', '$fname', '$lname', '$course', '$yrlevel','$phone', NOW())";
          
          
          if(mysqli_query($con,$query))
@@ -50,7 +50,7 @@
      
      else
      {
-       $_SESSION['errpromt'] = "Username already exits.";
+       $_SESSION['errprompt'] = "Username already exits.";
      }
     
   }
@@ -155,11 +155,7 @@
 								  
 							  </div>
                 
-                <div class="form-group">
-								  <label for="lineid">Line ID</lable>
-								  <input type="text" class="form-control" name="lindid" placeholder="Line ID" required>
-								  
-							  </div>
+               
                 
                
                 
