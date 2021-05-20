@@ -11,9 +11,8 @@
 		$course = clean($_POST['course']);
 		$yrlevel = clean($_POST['yrlevel']);
 		$phone = clean($_POST['phone']);
-		$lineid = clean($_POST['lineid']);
 		
-		$query = "UPDATE students SET firstname = '$fname', lastname = '$lname', course = '$course', yrlevel = '$yrlevel' , phone = '$phone', lineid = 'lineid'
+		$query = "UPDATE students SET firstname = '$fname', lastname = '$lname', course = '$course', yrlevel = '$yrlevel' , phone = '$phone'
 		WHERE id = '".$_SESSION['userid']."'";
 		
 		if($result = mysqli_query($con, $query)) {
@@ -104,13 +103,9 @@
 						
 						<div class="form-group">
 							<label for="phone">Phone Number</label>
-							<input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
+							<input type="text" class="form-control" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 						</div>
 						
-						<div class="form-group">
-							<label for="line id">Line ID</label>
-							<input type="text" class="form-control" name="line id" placeholder="Line ID" required>
-						</div>
 						
 						
 						
