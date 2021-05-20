@@ -103,7 +103,8 @@
 							  
 							  <div class="form-group">
 								  <label for="password">Password</lable>
-								  <input type="password" class="form-control" name="password" placeholder="Password" required>			  
+                  <p style="color: grey;font-size: 10px;">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.</p>
+								  <input type="password" class="form-control" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>			  
 							  </div>
 							  
 						  </fieldset>		  
@@ -151,8 +152,7 @@
                 
                 <div class="form-group">
 								  <label for="phone">Phone Number</lable>
-								  <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
-								  
+								  <input type="text" class="form-control" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required>					
 							  </div>
                 
                
