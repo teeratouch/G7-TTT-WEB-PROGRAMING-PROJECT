@@ -78,7 +78,8 @@
 				
 				<div class="form-group">
 					<label for="newpass">New Password</label>
-					<input type="password" class="form-control" name="newpass" placeholder="New Password" required>
+					<p style="color: grey;font-size: 15px;">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.</p>
+					<input type="password" class="form-control" name="newpass" placeholder="New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 				</div>
 				
 				<div class="form-group">
