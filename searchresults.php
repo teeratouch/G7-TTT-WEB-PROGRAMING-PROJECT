@@ -36,7 +36,7 @@
 			if(isset($_GET['search']))
 			{
 				$s = clean($_GET['searchbox']);
-				$query = "SELECT studentno, firstname, lastname, course, yrlevel, phone, lineid, DATE_FORMAT(date_joined, '%m/%d/%Y') as date_joined, CONCAT(firstname, ' ', lastname) as fullname 
+				$query = "SELECT studentno, firstname, lastname, course, yrlevel, phone, DATE_FORMAT(date_joined, '%m/%d/%Y') as date_joined, CONCAT(firstname, ' ', lastname) as fullname 
 				FROM students WHERE CONCAT(firstname, ' ', lastname) = '$s' OR firstname = '$s' OR lastname = '$s' ORDER BY date_joined DESC LIMIT 5";
 			
 		?>
