@@ -53,7 +53,7 @@
 			 echo "<div class='info'><strong>Student Course:</strong> <span>".$row['course']."</span></div>";
 			 echo "<div class='info'><strong>Student Year Level:</strong> <span>".$row['yrlevel']."</span></div>";
 			 echo "<div class='info'><strong>Phone Number:</strong> <span>".$row['phone']."</span></div>";
-			 echo "<div class='info'><strong>Line ID:</strong> <span>".$row['lineid']."</span></div>";
+			 
 			 
 			 $query_date = "SELECT DATE_FORMAT(date_joined, '%m/%d/%y') FROM students WHERE id = '".$_SESSION['userid']."' ";
 			 $result = mysqli_query($con,$query_date);
