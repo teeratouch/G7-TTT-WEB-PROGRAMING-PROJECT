@@ -18,7 +18,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Profile</title>
+<title>About Us</title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -53,7 +53,7 @@
 				
     			<div class="col-sm-4">
       				<div class="card">
-  						<img src="assets/image/g.jpg" alt="John" style="weight:150px;height:230px;">
+  						<img src="assets/image/g.jpg" alt="John" style="weight:100px;height:200px;">
   						<h1>GodJi</h1>
   						<p class="title" style="color: grey; font-size: 16px;" >Owner</p>
   						<p>Chulalongkorn University</p>
